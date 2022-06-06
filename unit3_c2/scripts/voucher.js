@@ -6,7 +6,7 @@ fetch(url)
       })
        .then(function(res){
            console.log(res)
-           displayitems(res)
+           displayitems(res[0].vouchers)
        })
         .catch(function(err){
             console.log(err);
