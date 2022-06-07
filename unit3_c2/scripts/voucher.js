@@ -1,4 +1,11 @@
 //https://masai-vouchers-api.herokuapp.com/api/vouchers
+
+var wallet = JSON.parse(localStorage.getItem('user'))
+// console.log(amount)
+wallet.map(function (el) {
+    document.getElementById("wallet_balance").innerText = el.amount
+})
+
 let url="https://masai-vouchers-api.herokuapp.com/api/vouchers";
 fetch(url)
       .then(function(res){
@@ -18,7 +25,7 @@ fetch(url)
              res.map(function(el){
                  console.log(el)
                  let box=document.createElement("div");
-                
+                 div.setAttribute("class", "voucher")
                  let name1= document.createElement("h3")
                  name1.innerText=el.name;
                 

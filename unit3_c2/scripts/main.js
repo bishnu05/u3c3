@@ -21,3 +21,4 @@ function Signup(event){
     localStorage.setItem("user",JSON.stringify(arr))
     window.location.reload();
 }
+
