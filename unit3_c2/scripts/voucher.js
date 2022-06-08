@@ -25,7 +25,7 @@ fetch(url)
              res.map(function(el){
                  console.log(el)
                  let box=document.createElement("div");
-                 div.setAttribute("class", "voucher")
+                 box.setAttribute("class", "voucher")
                  let name1= document.createElement("h3")
                  name1.innerText=el.name;
                 
